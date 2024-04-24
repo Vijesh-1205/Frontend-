@@ -1,5 +1,5 @@
-function append(value){
-    document.getElementById('display').value+=value;
+function append(num){
+    document.getElementById('display').value+=num;
 }
 function calculate(){
     var result=eval(document.getElementById('display').value)
