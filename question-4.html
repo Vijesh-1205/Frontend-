@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+    <button onclick="get('John')">John</button>
+    <button onclick="get('Hari')">Hari</button>
+    <button onclick="get('Praveen')">Praveen</button>
+
+    <script>
+        function get(name){
+            var res=document.getElementById('output')
+            res.innerHTML=name
+        }
+    </script>
+</body>
+</html>
