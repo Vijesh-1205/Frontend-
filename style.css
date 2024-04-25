@@ -34,6 +34,30 @@ body{
 }
 
 #text{
-    color: red;
     font-size: 16px;
+}
+
+.empty{
+    color: black;
+}
+.user{
+    color:orange;
+}
+.pass{
+    color: red;
+}
+.success{
+    color: blue;
+}
+.border-emp{
+    border: 2px solid black;
+}
+.border-user{
+    border: 2px solid orange;
+}
+.border-pass{
+    border: 2px solid red;
+}
+.border-success{
+    border: 2px solid blue;
 }
