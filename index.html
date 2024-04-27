@@ -132,29 +132,30 @@
             animating=false
         }
 
-        function remove(){
-            if(!pipeAnimating){
-                pipeAnimating=true;
-                currentWidth=parseFloat(getComputedStyle(pipe2Water).width)
+        function remove() {
+            if (!pipeAnimating) {
+                pipeAnimating = true;
+                var currentWidth = parseFloat(getComputedStyle(pipe2Water).width);
 
-                pipeInterval=setInterval(function(){
-                    currentWidth-=1
-                    pipe2Water.style.width=currentWidth+"px"
-                    if(currentWidth<0){
-                        clearInterval(pipeInterval)
-                        tapButton.style.backgroundColor="red"
-                        tankWater.style.display="none"
-                        pipeWater.style.display="none"
-                        pipeAnimating=false;
+                pipeInterval = setInterval(function () {
+                    currentWidth -= 1;
+                    pipe2Water.style.width = currentWidth + "px";
+                    if (currentWidth < 0) {
+                        clearInterval(pipeInterval);
+                        tapButton.style.backgroundColor = "red";
+                        tankWater.style.display = "none";
+                        pipe2Water.style.display = "none"; // Corrected to hide the pipe water
+                        pipeAnimating = false;
+                        pipeWater.style.display="none";
                     }
-                },20)
-            }
-            else{
-                clearInterval(pipeInterval)
-                Animating=false
+                }, 20);
+            } else {
+                clearInterval(pipeInterval);
+                pipeAnimating = false;
             }
         }
-    })
+
+        })
     </script>
 </body>
 </html>
