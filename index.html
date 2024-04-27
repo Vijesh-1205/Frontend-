@@ -15,7 +15,7 @@
             width: 270px;
             height: 400px;
             border: 2px solid black;
-            border-radius: 5px 0px 0px 5px
+            border-radius: 10px 10px 0px 0px
         }
 
         .water-1 {
@@ -24,8 +24,9 @@
             height:99%;
             position: absolute;
             bottom:1px;
-            border-radius: 2px;
+            border-radius: 5px 5px 0px 0px;
         }
+
         .pipe-1{
             position: absolute;
             top: 96.8%;
@@ -78,6 +79,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="tank-container">
         <div class="water-tank">
@@ -98,7 +100,7 @@
        var pipe2Water=document.querySelector('.pipe')
        var interval
        var pipeInterval
-       var animating=false;
+       var animating=false
        var pipeAnimating=false
 
        tapButton.addEventListener("click",function(){
